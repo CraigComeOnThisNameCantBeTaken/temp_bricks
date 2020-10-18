@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+
+@section Styles {
+    <link rel="stylesheet" type="text/css" asp-href-include="~/dist/ClientApp/styles.css" />
+}
+<app-root>
+    <div>Loading</div>
+</app-root>
+
+@section Scripts {
+    <environment include="Development">
+        <script type="text/javascript" src="~/dist/ClientApp/runtime.js"></script>
+        <script type="text/javascript" src="~/dist/ClientApp/vendor.js"></script>
+        <script type="text/javascript" src="~/dist/ClientApp/polyfills.js"></script>
+        <script type="text/javascript" src="~/dist/ClientApp/main.js"></script>
+    </environment>
+}

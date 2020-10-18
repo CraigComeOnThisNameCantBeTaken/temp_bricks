@@ -1,0 +1,39 @@
+{
+  "name": "LegalBricks.Interview.Test",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "ng build",
+    "watch": "ng build ClientApp --watch"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "9.1.3",
+    "@angular/common": "9.1.3",
+    "@angular/compiler": "9.1.3",
+    "@angular/core": "9.1.3",
+    "@angular/forms": "9.1.3",
+    "@angular/platform-browser": "9.1.3",
+    "@angular/platform-browser-dynamic": "9.1.3",
+    "@angular/platform-server": "9.1.3",
+    "@angular/router": "9.1.3",
+    "aspnet-prerendering": "3.0.1",
+    "core-js": "2.6.8",
+    "jquery": "^3.5.0",
+    "rxjs": "6.5.5",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.901.3",
+    "@angular/cli": "9.1.3",
+    "@angular/compiler-cli": "9.1.3",
+    "@angular/language-service": "9.1.3",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^5.1.2",
+    "typescript": "3.8.3"
+  },
+  "optionalDependencies": {
+    "ts-node": "8.1.0",
+    "tslint": "5.16.0"
+  }
+}
