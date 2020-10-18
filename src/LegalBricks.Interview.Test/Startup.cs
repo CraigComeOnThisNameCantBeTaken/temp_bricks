@@ -1,4 +1,6 @@
 using LegalBricks.Interview.Database;
+using LegalBricks.Interview.Test.Repositories.CustomerRepository;
+using LegalBricks.Interview.Test.Services.Customer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -20,6 +22,8 @@ namespace LegalBricks.Interview.Test
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDataAccess();
+            services.AddScoped<ICustomerRepository, NHibernateCustomerRepository>();
+            services.AddScoped<ICustomerService, CustomerService>();
             services.AddMvc(option => option.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 

@@ -26,6 +26,7 @@ namespace LegalBricks.Interview.Database
             var sessionFactory = fluentConfig.BuildSessionFactory();
 
             services.AddSingleton<ISessionFactory>(sessionFactory);
+
             services.AddScoped<ISession>(provider =>
                 provider.GetService<ISessionFactory>()
                 .OpenSession()

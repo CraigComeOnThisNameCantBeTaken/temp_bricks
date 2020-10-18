@@ -1,0 +1,29 @@
+{{ customer | json }}
+
+<!-- Ordinarily I would use something like angular material
+    or create a small custom library implementing the theme but some time constraints-->
+
+<form [formGroup]="form">
+    <label for="name">First Name</label>
+    <input type="text" name="name" formControlName="firstName" class="form-control">
+    <small class="form-text text-muted">
+        Required
+    </small>
+
+    <label for="surname">Second Name</label>
+    <input type="text" name="surname" formControlName="surname" class="form-control">
+    <small class="form-text text-muted">
+        Required
+    </small>
+
+    <label for="name">Phone Number</label>
+    <input type="text" name="name" formControlName="phoneNumber" class="form-control">
+
+    <label for="email">Email</label>
+    <input type="text" name="surname" formControlName="email" class="form-control">
+    <small class="form-text text-muted">
+        Required
+    </small>
+
+    <button (click)="submit()">Submit</button>
+</form>

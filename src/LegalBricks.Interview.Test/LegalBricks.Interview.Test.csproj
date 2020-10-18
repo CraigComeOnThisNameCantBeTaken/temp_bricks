@@ -8,6 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="projects\ClientApp\src\Utilities\**" />
+    <Content Remove="projects\ClientApp\src\Utilities\**" />
+    <EmbeddedResource Remove="projects\ClientApp\src\Utilities\**" />
+    <None Remove="projects\ClientApp\src\Utilities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="projects\ClientApp\src\Models\Customer.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="2.1.2" />
     <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
@@ -23,5 +34,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\LegalBricks.Interview.Database\LegalBricks.Interview.Database.NHibernate.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="projects\ClientApp\src\Models\customer.ts" />
   </ItemGroup>
 </Project>
